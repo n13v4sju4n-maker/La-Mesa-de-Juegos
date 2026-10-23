@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/StyleContacto.css">
+    <title>La Mesa de Juegos | Contacto</title>
+</head>
+<body id="Contenedor">
+    <header id="Titulo">
+        <img id="Logotipo" src="logo-01B.svg" alt="Logotipo de La Mesa de Juegos">
+        <h1>
+            <img id="Nombre" src="logo-03.svg" alt="La Mesa de Juegos">
+        </h1>
+        <nav>
+            <a class="Inicio" href="IndexPrincipal.html">Inicio</a>
+            <a class="Inicio" href="IndexBuscador.html">Productos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="consulta">
+            <div id="caja-consulta">
+                <h2 id="titulo-consulta">Envianos tus consultas</h2>
+                <p>¿Alguna duda sobre nuestros juegos? Escribinos!</p>
+                <form id="formulario-consulta" action="https://formsubmit.co/contacto.lamesadejuegos@gmail.com" method="POST">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                    <label for="asunto">Asunto</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Motivo de consulta" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje" id="mensaje" cols="60" rows="20" maxlength="300" placeholder="Escribi tu consulta..." required></textarea>
+                    <button id="boton-consulta" type="submit">Enviar</button>
+                 </form>
+            </div>
+        </section>
+    </main>
+    <footer class="contacto">
+        <div class="datos-contacto">
+            <a id="link-contacto" href="IndexContacto.html">Contacto</a>
+            <p>Whatsapp: +55-5555-5555</p>
+            <p>Email: cualquier@mail.com</p>
+        </div>
+        <img class="ImgFooter" src="logo-03.svg" alt="Logo footer">
+        <img id="logoredes" src="CSS/logo iconos redes.webp" alt="Iconos de redes sociales">
+    </footer>
+</body>
+</html>

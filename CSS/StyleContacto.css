@@ -1,0 +1,229 @@
+/* ==================================================
+   01. ESTILOS GENERALES
+   ================================================== */
+#Contenedor {
+    background-image: url("Fondo pagina web final.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: #B97849;
+}
+/* ==================================================
+   02. HEADER
+   ================================================== */
+#Titulo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: #F5EBDD;
+    word-spacing: 20px;
+}
+#Titulo h1 {
+    margin: 0;
+}
+#Logotipo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+#Nombre {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+.Inicio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: 100;
+    text-decoration: none;
+}
+/* ==================================================
+   03. MAIN - ESTRUCTURA GENERAL
+   ================================================== */
+#formulario-consulta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    color: #B97849;
+    width: 90%;
+    min-width: 0;
+}
+#caja-consulta{
+    width: 90%;
+    max-width: 800px;
+    min-height: 800px;
+    background-color: #24483C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 30px auto 0;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+#titulo-consulta{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #B97849;
+}
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+input{
+    height: 30px;
+}
+/* ==================================================
+   06. MAIN - EFECTOS HOVER
+   ================================================== */
+#boton-consulta:hover {
+    background-color: #8e5a36;
+}
+/* ==================================================
+   07. MAIN - BOTONES
+   ================================================== */
+#boton-consulta{
+    width: 50%;
+    max-width: 200px;
+    height: 50px;
+    background-color: #B97849;
+    border: 1px solid #5B3924;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* ==================================================
+   08. FOOTER
+   ================================================== */
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 230px;
+    background-color: rgb(110, 109, 109);
+}
+.datos-contacto {
+    justify-self: start;
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+#link-contacto{
+    text-decoration: none;
+}
+.ImgFooter {
+    grid-column: 2 / 3;
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+}
+#logoredes {
+    grid-column: 3 / 4;
+    justify-self: end;
+    width: 150px;
+    height: 150px;
+}
+/* ==================================================
+   10. RESPONSIVE - TABLET (601px a 900px)
+   ================================================== */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #Titulo {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 400px);
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+        row-gap: 10px;
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        padding: 15px 0;
+    }
+    #Logotipo {
+        width: 120px;
+        height: 120px;
+    }
+    #Titulo h1 {
+        min-width: 0;
+    }
+    #Nombre {
+        display: block;
+        width: 100%;
+        height: 120px;
+    }
+    #Titulo nav {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+}
+/* ==================================================
+   11. RESPONSIVE - CELULAR (hasta 600px)
+   ================================================== */
+@media screen and (max-width: 600px) {
+    #Titulo {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 15px 0;
+    }
+    #Logotipo {
+        width: 100px;
+        height: 100px;
+    }
+    #Titulo h1 {
+        width: 100%;
+        text-align: center;
+    }
+    #Nombre {
+        width: 90%;
+        height: auto;
+        max-height: 120px;
+    }
+    .subtitulo {
+        height: 60px;
+        font-size: 30px;
+    }
+    .contacto {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 15px;
+        box-sizing: border-box;
+        height: auto;
+        padding: 20px 10px;
+    }
+    .datos-contacto {
+        grid-column: 1;
+        justify-self: center;
+        text-align: center;
+    }
+    .ImgFooter {
+        grid-column: 1;
+        width: 200px;
+        max-width: 100%;
+    }
+    #logoredes {
+        grid-column: 1;
+        justify-self: center;
+        width: 120px;
+        height: auto;
+    }
+        #titulo-consulta {
+        text-align: center;
+    }
+    #caja-consulta p {
+        text-align: center;
+    }
+}

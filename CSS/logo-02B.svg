@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 682.79 468.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #738d8d;
+        stroke: #748e92;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: url(#Degradado_sin_nombre_140);
+      }
+    </style>
+    <linearGradient id="Degradado_sin_nombre_140" data-name="Degradado sin nombre 140" x1="27.37" y1="234.49" x2="654.44" y2="234.49" gradientTransform="translate(106.42 575.39) rotate(-90)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#000" stop-opacity=".3"/>
+      <stop offset="0" stop-color="#040505" stop-opacity=".32"/>
+      <stop offset=".01" stop-color="#212929" stop-opacity=".48"/>
+      <stop offset=".02" stop-color="#3b4949" stop-opacity=".62"/>
+      <stop offset=".04" stop-color="#516565" stop-opacity=".74"/>
+      <stop offset=".05" stop-color="#627b7b" stop-opacity=".84"/>
+      <stop offset=".07" stop-color="#708c8c" stop-opacity=".91"/>
+      <stop offset=".09" stop-color="#7a9898" stop-opacity=".96"/>
+      <stop offset=".12" stop-color="#7f9f9f" stop-opacity=".99"/>
+      <stop offset=".2" stop-color="#81a1a1"/>
+      <stop offset=".8" stop-color="#7e9e9e"/>
+      <stop offset=".88" stop-color="#7c9c9c" stop-opacity=".99"/>
+      <stop offset=".91" stop-color="#779595" stop-opacity=".96"/>
+      <stop offset=".93" stop-color="#6d8989" stop-opacity=".9"/>
+      <stop offset=".95" stop-color="#607878" stop-opacity=".81"/>
+      <stop offset=".96" stop-color="#4e6262" stop-opacity=".7"/>
+      <stop offset=".98" stop-color="#384747" stop-opacity=".56"/>
+      <stop offset=".99" stop-color="#1f2727" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#020303" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <rect class="cls-1" width="682.79" height="468.98" rx="48.48" ry="48.48"/>
+  <rect class="cls-2" x="121.42" y="-79.04" width="438.98" height="627.06" rx="33.48" ry="33.48" transform="translate(575.39 -106.42) rotate(90)"/>
+</svg>

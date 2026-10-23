@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/StyleBuscador.css">
+    <title>La Mesa de Juegos | Productos</title>
+</head>
+<body id="Contenedor">
+    <header id="Titulo">
+        <img id="Logotipo" src="logo-01B.svg" alt="Logotipo de La Mesa de Juegos">
+        <h1>
+            <img id="Nombre" src="logo-03.svg" alt="La Mesa de Juegos">
+        </h1>
+        <nav>
+            <a class="Inicio" href="IndexPrincipal.html">Inicio</a>
+            <a class="Inicio" href="IndexBuscador.html">Productos</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="subtitulo" id="Buscador-juegos">Buscador de juegos</h2>
+        <div id="Espaciado">
+        <aside id="Buscador" aria-label="Filtros de productos">
+            <form>
+                <h3>Buscar juegos</h3>
+                <label for="buscar-juego">Nombre del juego</label>
+                <input type="search" id="buscar-juego" name="juego" placeholder="Ej. Ajedrez">
+
+                <label for="categoria">Categoria</label>
+                <select name="categoria" id="categoria">
+                    <option value="">Todas las categorias</option>
+                    <option value="estrategia">Estrategia</option>
+                    <option value="cartas">Cartas</option>
+                    <option value="familiares">Familiares</option>
+                    <option value="rol">Rol y aventura</option>
+                    <option value="clasicos">Clasicos</option>
+                </select>
+
+                <fieldset>
+                    <legend>Precio</legend>
+                    <label for="precio-minimo">Minimo</label>
+                    <input type="number" id="precio-minimo" name="minimo" min="0" placeholder="$ 0">
+                    <label for="precio-maximo">Maximo</label>
+                    <input type="number" id="precio-maximo" name="maximo" min="0" placeholder="$ 100000">
+                </fieldset>
+                <button type="button" class="boton-buscar">Buscar</button>
+            </form>
+        </aside>
+        <section class="Productos" aria-labelledby="Buscador-juegos">
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes\Juegos de mesa\Carcassonne caja.webp" alt="Carcassonne">
+                    <img class="Imagen-hoverNOV" src="Imagenes\Juegos de mesa\Carcassonne juego.webp" alt="Tablero de Carcassonne">
+                    <p>Carcassonne</p>
+                </div>    
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>    
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/Dungeon&Dragons caja.webp" alt="Dungeons&Dragons">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/Dungeon&Dragons tablero.webp" alt="Contenido de Dungeons & Dragons">
+                    <p>Dungeons&Dragons</p>
+                </div>    
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/Clue caja.webp" alt="Clue">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/Clue tablero.webp" alt="Tablero de Clue">
+                    <p>Clue</p>
+                </div>    
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/Catan caja.webp" alt="Catan">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/Catan contenido.webp" alt="Contenido de Catan">
+                    <p>Catan</p>
+                </div>
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/Pokemon TCG 1.webp" alt="PokemonTCG">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/Pokemon TCG 2.webp" alt="Cartas Pokemon TCG">
+                    <p>PokemonTCG</p>
+                </div>
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/TEG caja.webp" alt="TEG">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/TEG tablero.webp" alt="Tablero de TEG">
+                    <p>TEG</p>
+                </div>    
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/MTG Ravnica booster box.webp" alt="MTGRavnica">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/MTG Ravnica 2.webp" alt="Contenido de Magic: The Gathering Ravnica">
+                    <p>MTG caja booster</p>
+                </div>    
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/Ajedrez madera caja.webp" alt="Ajedrez">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/Ajedrez madera tablero.webp" alt="Tablero de ajedrez de madera">
+                    <p>Tablero de ajedrez</p>
+                </div>
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes\Juegos de mesa\Scrabble caja.jpg" alt="Scrabble">
+                    <img class="Imagen-hoverNOV" src="Imagenes\Juegos de mesa\Scrabble tablero.webp" alt="Tablero Scrabble">
+                    <p>Scrabble</p>
+                </div>
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/Monopoly frente.webp" alt="Monopoly">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/Monopoly tablero.webp" alt="Tablero de Monopoly">
+                    <p>Monopoly</p>
+                </div>    
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes/Juegos de mesa/Risk caja.webp" alt="Risk">
+                    <img class="Imagen-hoverNOV" src="Imagenes/Juegos de mesa/Risk tablero.webp" alt="Tablero de Risk">
+                    <p>Risk</p>
+                </div>
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+            <div class="producto">
+                <div class="caja carta">
+                    <img class="ImgNov" src="Imagenes\Juegos de mesa\Uno caja.webp" alt="Uno">
+                    <img class="Imagen-hoverNOV" src="Imagenes\Juegos de mesa\Uno cartas.webp" alt="Cartas Uno">
+                    <p>Uno</p>
+                </div>
+                <a href="IndexContacto.html" class="boton-consultar">Consultar</a>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer class="contacto">
+        <div class="datos-contacto">
+            <a id="link-contacto" href="IndexContacto.html">Contacto</a>
+            <p>Whatsapp: +55-5555-5555</p>
+            <p>Email: cualquier@mail.com</p>
+        </div>
+        <img class="ImgFooter" src="logo-03.svg" alt="Logo footer">
+        <img id="logoredes" src="CSS/logo iconos redes.webp" alt="Iconos de redes sociales">
+    </footer>
+</body>
+</html>

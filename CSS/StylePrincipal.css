@@ -1,0 +1,361 @@
+/* ==================================================
+   01. ESTILOS GENERALES
+   ================================================== */
+#Contenedor {
+    background-image: url("Fondo pagina web final.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: blue;
+}
+/* ==================================================
+   02. HEADER
+   ================================================== */
+#Titulo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    background-color: #F5EBDD;
+    word-spacing: 20px;
+}
+#Titulo h1 {
+    margin: 0;
+}
+#Logotipo {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+#Nombre {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+}
+.Inicio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    font-weight: 100;
+    text-decoration: none;
+}
+/* ==================================================
+   03. MAIN - ESTRUCTURA GENERAL
+   ================================================== */
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: #24483C;
+    color: #B97849;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    text-align: center;
+}
+.Novedades, .Ofertas {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    justify-items: center;
+    gap: 100px;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+/* ==================================================
+   04. MAIN - TARJETAS Y BANDEJAS
+   ================================================== */
+.caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+    width: 450px;
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+}
+.caja.carta {
+    width: 270px;
+    height: 350px;
+    padding: 15px;
+    background-color: #F5EBDD;
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px black;
+}
+.caja.bowl {
+    height: 300px;
+    background-image: url("logo-02B.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.caja.carta p {
+    position: relative;
+    top: 30px;
+}
+/* ==================================================
+   05. MAIN - IMAGENES
+   ================================================== */
+.ImgNov, .ImgOf {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+.Imagen-hoverNOV, .Imagen-hoverOF {
+    position: absolute;
+    top: 20px;
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    opacity: 0;
+    mix-blend-mode: multiply;
+}
+.Imagen-hoverNOV {
+    left: 25px;
+}
+.Imagen-hoverOF {
+    left: 120px;
+}
+/* ==================================================
+   06. MAIN - EFECTOS HOVER
+   ================================================== */
+.caja:hover .ImgNov, .caja:hover .ImgOf {
+    opacity: 0;
+}
+.caja:hover .Imagen-hoverNOV, .caja:hover .Imagen-hoverOF {
+    opacity: 1;
+}
+/* ==================================================
+   07. MAIN - BOTONES
+   ================================================== */
+.boton-consultar {
+    width: 150px;
+    height: 70px;
+    background-color: #B97849;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border: 2px outset #B97849
+}
+.boton-consultar:hover {
+    background-color: #8e5a36;
+}
+/* ==================================================
+   08. FOOTER
+   ================================================== */
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    position: relative;
+    top: 20px;
+    width: 100%;
+    height: 230px;
+    background-color: rgb(110, 109, 109);
+}
+.datos-contacto {
+    grid-row: 1 / 2;
+    justify-self: start;
+    color: aqua;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+#link-contacto{
+    text-decoration: none;
+}
+.ImgFooter {
+    grid-column: 2 / 3;
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+}
+#logoredes {
+    grid-column: 3 / 4;
+    justify-self: end;
+    width: 150px;
+    height: 150px;
+}
+/* ==================================================
+   09. RESPONSIVE - PANTALLAS DE HASTA 1200px
+   ================================================== */
+@media (max-width: 1200px) {
+    .Novedades, .Ofertas {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px;
+    }
+}
+/* ==================================================
+   10. RESPONSIVE - TABLET (901px a 1024px)
+   ================================================== */
+@media screen and (min-width: 901px) and (max-width: 1024px) {
+    .caja.bowl {
+        box-sizing: border-box;
+        width: 340px;
+        height: 290px;
+        padding: 10px;
+        justify-content: center;
+        gap: 5px;
+        background-size: 100% 100%;
+    }
+
+    .caja.bowl .ImgOf {
+        width: 180px;
+        height: 160px;
+    }
+
+    .caja.bowl .Imagen-hoverOF {
+        top: 10px;
+        left: 50%;
+        width: 180px;
+        height: 180px;
+        transform: translateX(-50%);
+    }
+}
+/* ==================================================
+   11. RESPONSIVE - TABLET (601px a 900px)
+   ================================================== */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    #Titulo {
+        display: grid;
+        grid-template-columns: 120px minmax(0, 400px);
+        justify-content: center;
+        align-items: center;
+        column-gap: 15px;
+        row-gap: 10px;
+        width: 100%;
+        height: auto;
+        min-height: 180px;
+        padding: 15px 0;
+    }
+    #Logotipo {
+        width: 120px;
+        height: 120px;
+    }
+    #Titulo h1 {
+        min-width: 0;
+    }
+    #Nombre {
+        display: block;
+        width: 100%;
+        height: 120px;
+    }
+    #Titulo nav {
+        grid-column: 1 / -1;
+        text-align: center;
+    }
+    .caja.bowl {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        box-sizing: border-box;
+        width: 340px;
+        height: 290px;
+        padding: 10px;
+        background-size: 100% 100%;
+    }
+    .ImgOf {
+        width: 180px;
+        height: 160px;
+    }
+    .Imagen-hoverOF {
+        top: 10px;
+        left: 50%;
+        width: 180px;
+        height: 180px;
+        transform: translateX(-50%);
+    }
+}
+/* ==================================================
+   12. RESPONSIVE - CELULAR (hasta 600px)
+   ================================================== */
+@media screen and (max-width: 600px) {
+    #Titulo {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 15px 0;
+    }
+    #Logotipo {
+        width: 100px;
+        height: 100px;
+    }
+    #Titulo h1 {
+        width: 100%;
+        text-align: center;
+    }
+    #Nombre {
+        width: 90%;
+        height: auto;
+        max-height: 120px;
+    }
+    .subtitulo {
+        height: 60px;
+        font-size: 30px;
+    }
+    .Novedades, .Ofertas {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    .caja.carta {
+        box-sizing: border-box;
+        width: min(290px, 100%);
+    }
+    .caja.bowl {
+        box-sizing: border-box;
+        width: 300px;
+        height: 220px;
+        padding: 10px;
+        background-size: 100% 100%;
+    }
+    .ImgNov, .ImgOf {
+        max-width: 100%;
+    }
+    .ImgOf {
+        width: 180px;
+        height: 150px;
+    }
+    .Imagen-hoverOF {
+        display: none;
+    }
+    .caja.bowl:hover .ImgOf {
+        opacity: 1;
+    }
+    .contacto {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 15px;
+        box-sizing: border-box;
+        height: auto;
+        padding: 20px 10px;
+    }
+    .datos-contacto {
+        grid-column: 1;
+        justify-self: center;
+        text-align: center;
+    }
+    .ImgFooter {
+        grid-column: 1;
+        width: 200px;
+        max-width: 100%;
+    }
+    #logoredes {
+        grid-column: 1;
+        justify-self: center;
+        width: 120px;
+        height: auto;
+    }
+}
